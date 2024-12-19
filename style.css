@@ -152,7 +152,18 @@ body {
 
   .contact-info{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+  .heading-3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 48px;
+  }
+  .spacer{
+    text-align: left;
+  }
+
   .contact form {
     display: flex;
     justify-content: center;
@@ -165,3 +176,121 @@ body {
     padding: 48px;
     background-color: #f0f0f0;
   }
+
+  .container {
+    padding: 100px 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    background-color: #DADACA66;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .input-group input:focus {
+    border-color: #4caf50;
+  }
+  
+  .submit-btn {
+    display: inline-block;
+    background-color: #204F0A;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  .skip-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4caf50;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .skip-link:hover {
+    text-decoration: underline;
+  }
+
+  footer{
+    padding: 96px 48px 24px 48px;
+    background-color: transparent;
+  }
+
+
+@media (max-width: 1024px) {
+    footer{
+        padding: 60px 48px 24px 48px;
+    }
+    .container{
+        padding: 20px 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer{
+        padding: 30px 48px 24px 48px;
+    }
+    .container{
+        padding: 0px 48px;
+    }
+}
+
+.footercontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagelink{
+    font-family: 'Lexend Exa';
+    color: #00000099;
+    font-size: 29px;
+    font-weight: 270;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+}
+.followme{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border-color: #00000029;
+    background-color: transparent;
+}
+.buttontext{
+    font-family: Lexend Exa;
+    color: #000000;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
